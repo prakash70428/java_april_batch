@@ -12,7 +12,7 @@ public class pattern13 {
         int row = 1;
         int spaces = n - 1;
         int star = 1;
-      
+       
         
         while(row <= n) {
         	//spaces
@@ -23,12 +23,18 @@ public class pattern13 {
         	}
         	
         	//star
-        	int val=1;
         	int j=1;
+        	int val = 1;
         	while(j <= star) {
-        	    System.out.print(val+" ");
-        	    val++;
+        	    System.out.print(val + " ");
+        	    if(j < star/2+1) {
+        	    	val = val + 1;
+        	    }else {
+        	    	val = val - 1;
+        	    }
+        	    
         	    j = j + 1;
+        	   
         	}
         	
         	//next row prepration
@@ -36,7 +42,7 @@ public class pattern13 {
         	System.out.println();
         	spaces = spaces - 1;
         	star = star + 2;
-        	
+        	val = val + 1;
         }
 	}
 
