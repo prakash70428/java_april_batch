@@ -1,7 +1,6 @@
 package lecture_3;
 
 public class homework {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         System.out.println("Hello");
@@ -11,6 +10,7 @@ public class homework {
         Add();
         System.out.println(c);
 	}
+	
 	public static void Add() {
 		int a = 11;
 		int b = 17;
@@ -18,6 +18,7 @@ public class homework {
 		Sub();
 		System.out.println(c);
 	}
+	
 	public static void Sub() {
 		int a = 11;
 		int b = 7;
